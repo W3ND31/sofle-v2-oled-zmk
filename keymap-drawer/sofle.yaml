@@ -1,9 +1,9 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ESC, Q, W, E, R, T, Y, U, I, O, P, ENTER, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LEFT CONTROL, LEFT WIN, LEFT ALT, lower, SPACE, SPACE, raise, RIGHT ALT, RIGHT WIN, RIGHT CONTROL]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, MUTE, PRINTSCREEN, N, M, ',', ., /, RSHFT, LEFT CONTROL, LEFT WIN, LEFT ALT, SPACE, lower, raise, ENTER, RIGHT ALT, RIGHT WIN, RIGHT CONTROL]
   lower:
-  - {t: ▽, type: trans}
+  - ESCAPE
   - F1
   - F2
   - F3
@@ -24,8 +24,8 @@ layers:
   - '6'
   - '7'
   - '8'
-  - '9'
-  - '0'
+  - '{'
+  - '}'
   - F12
   - '&caps_word'
   - '!'
@@ -40,10 +40,10 @@ layers:
   - )
   - '|'
   - '&bl BL_TOG'
-  - '='
-  - '-'
-  - KP PLUS
-  - '{'
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
   - '}'
   - {t: PLAY PAUSE, h: toggle}
   - {t: ▽, type: trans}
@@ -56,8 +56,8 @@ layers:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,8 +119,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,10 +178,10 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
-  - ''
   - ''
   - {type: held}
+  - {type: held}
+  - ''
   - ''
   - ''
   - ''
