@@ -87,7 +87,7 @@ layers:
   - UP
   - {t: ▽, type: trans}
   - '0'
-  - {t: ▽, type: trans}
+  - '&PERMA_DEL'
   - {t: ▽, type: trans}
   - LALT
   - LCTRL
