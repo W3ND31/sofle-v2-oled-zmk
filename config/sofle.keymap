@@ -32,28 +32,28 @@
         M_COPY: M_COPY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press LGUI>,<&macro_tap C>,<&macro_release LGUI> ;
+            bindings = <&kp LG(C)> ;
             label = "M_COPY";
         };
 
         M_PASTE: M_PASTE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press LGUI>,<&macro_tap V>,<&macro_release LGUI>;
+            bindings = <&kp LG(P)>;
             label = "M_PASTE";
         };
 
         M_UNDO: M_UNDO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press LGUI>,<&macro_tap Z>,<&macro_release LGUI>;
+            bindings = <&kp LG(Z)>;
             label = "M_UNDO";
         };
 
         M_CUT: M_CUT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press LGUI>,<&macro_tap X>,<&macro_release LGUI>;
+            bindings = <&kp LG(X)>;
             label = "M_CUT";
         };
 
