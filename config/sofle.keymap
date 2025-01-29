@@ -127,8 +127,8 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &kp MINUS  &kp EQUAL  &kp DEL
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &trans     &trans    &kp UP    &kp LBKT   &kp RBKT   &PERMA_DEL
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans     &trans    &kp UP    &kp LBKT   &kp RBKT   &PERMA_DEL
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
 &trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans     &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
