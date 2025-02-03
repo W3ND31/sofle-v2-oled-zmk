@@ -13,13 +13,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-       # nice_view_gem
-    - name: nice-view-gem
-      remote: m165437
-      revision: main
-      # nice_oled
-    - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: main
   self:
     path: config
