@@ -15,7 +15,6 @@
 include:
   - board: nice_nano_v2
     shield: sofle_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sofle_Wendel\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
   - board: nice_nano_v2
     shield: sofle_right nice_oled
   - board: nice_nano_v2
