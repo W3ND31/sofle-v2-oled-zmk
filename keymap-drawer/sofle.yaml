@@ -1,8 +1,8 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  BASE: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
-    C, V, B, MUTE, PRINTSCREEN, N, M, ',', ., /, RSHFT, LCTRL, LGUI, LALT, BOT, SPACE, RETURN, TOP, RALT, RGUI, RCTRL]
-  BOT:
+  base: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
+    C, V, B, MUTE, PRINTSCREEN, N, M, ',', ., /, RSHFT, LCTRL, LGUI, LALT, bot, SPACE, RETURN, top, RALT, RGUI, RCTRL]
+  bot:
   - ESCAPE
   - F1
   - F2
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  TOP:
+  top:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MID:
+  mid:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}

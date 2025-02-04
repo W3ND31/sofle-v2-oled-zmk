@@ -124,8 +124,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-BASE">
-<text x="0" y="28" class="label" id="BASE">BASE:</text>
+<g transform="translate(30, 0)" class="layer-base">
+<text x="0" y="28" class="label" id="base">base:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -341,8 +341,8 @@ path.combo {
 </g>
 <g transform="translate(316, 274) rotate(22.5)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#BOT">
-<text x="0" y="0" class="key tap layer-activator">BOT</text>
+<a href="#bot">
+<text x="0" y="0" class="key tap layer-activator">bot</text>
 </a></g>
 <g transform="translate(378, 291) rotate(30.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -354,8 +354,8 @@ path.combo {
 </g>
 <g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#TOP">
-<text x="0" y="0" class="key tap layer-activator">TOP</text>
+<a href="#top">
+<text x="0" y="0" class="key tap layer-activator">top</text>
 </a></g>
 <g transform="translate(644, 259)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -371,8 +371,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 398)" class="layer-BOT">
-<text x="0" y="28" class="label" id="BOT">BOT:</text>
+<g transform="translate(30, 398)" class="layer-bot">
+<text x="0" y="28" class="label" id="bot">bot:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -618,8 +618,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 795)" class="layer-TOP">
-<text x="0" y="28" class="label" id="TOP">TOP:</text>
+<g transform="translate(30, 795)" class="layer-top">
+<text x="0" y="28" class="label" id="top">top:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -869,8 +869,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1193)" class="layer-MID">
-<text x="0" y="28" class="label" id="MID">MID:</text>
+<g transform="translate(30, 1193)" class="layer-mid">
+<text x="0" y="28" class="label" id="mid">mid:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
