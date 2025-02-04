@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: nice-view-gen                 #new entry
+    - name: nice-view-gem                 #new entry
       remote: wendel                       #new entry
       revision: main                      #new entry
   self:
