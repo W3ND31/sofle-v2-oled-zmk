@@ -11,11 +11,11 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: nice-view-gem               
-      remote: wendel                       
-      revision: main     
-    # - name: nice-view-gem #new entry
-    #   remote: m165437 #new entry
-    #   revision: main #new entry                 
+    # - name: zmk-nice-oled               
+    #   remote: wendel                       
+    #   revision: main     
+    - name: zmk-nice-oled #new entry
+      remote: m165437 #new entry
+      revision: main #new entry                 
   self:
     path: config
