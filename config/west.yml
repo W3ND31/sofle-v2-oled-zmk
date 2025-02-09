@@ -2,10 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: wendel
-      url-base: https://github.com/W3ND31
-    - name: m165437 #new entry
-      url-base: https://github.com/M165437 #new entry
+    # - name: wendel
+    #   url-base: https://github.com/W3ND31
+    - name: mctechnology17 #new entry
+      url-base: https://github.com/mctechnology17 #new entry
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +15,7 @@ manifest:
     #   remote: wendel
     #   revision: main
     - name: zmk-nice-oled #new entry
-      remote: m165437 #new entry
+      remote: mctechnology17 #new entry
       revision: main #new entry
   self:
     path: config
