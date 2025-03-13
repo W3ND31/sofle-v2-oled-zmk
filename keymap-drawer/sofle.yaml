@@ -44,7 +44,7 @@ layers:
   - '&M_CUT'
   - '&M_COPY'
   - '&M_PASTE'
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: PLAY PAUSE, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -75,7 +75,7 @@ layers:
   - {t: ▽, type: trans}
   - '-'
   - '='
-  - DEL
+  - '&PERMA_DEL'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,7 +87,7 @@ layers:
   - UP
   - '['
   - ']'
-  - '&PERMA_DEL'
+  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,7 +99,7 @@ layers:
   - DOWN
   - RIGHT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - UNDO
   - CUT
