@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # - name: wendel
-    #   url-base: https://github.com/W3ND31
+    - name: wendel
+      url-base: https://github.com/W3ND31
     - name: mctechnology17 #new entry
       url-base: https://github.com/mctechnology17 #new entry
   projects:
@@ -11,11 +11,11 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    # - name: zmk-nice-oled
-    #   remote: wendel
-    #   revision: main
-    - name: zmk-nice-oled #new entry
-      remote: mctechnology17 #new entry
-      revision: main #new entry
+    - name: zmk-nice-oled
+      remote: wendel
+      revision: test-font
+    # - name: zmk-nice-oled #new entry
+    #   remote: mctechnology17 #new entry
+    #   revision: main #new entry
   self:
     path: config
