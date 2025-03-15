@@ -45,7 +45,7 @@ layers:
   - '&M_COPY'
   - '&M_PASTE'
   - '&bootloader'
-  - {t: PLAY PAUSE, h: toggle}
+  - PLAY PAUSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,7 +99,7 @@ layers:
   - DOWN
   - RIGHT
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UNDO
   - CUT
@@ -108,7 +108,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
