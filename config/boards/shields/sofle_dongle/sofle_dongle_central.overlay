@@ -16,6 +16,8 @@
         zmk,kscan = &mock_kscan;
         zephyr,display = &oled;
         zmk,physical-layout = &sofle_layout;
+        // ALTERAÇÃO: Habilita RGB underglow no dongle central (mesmo hardware do backup)
+        zmk,underglow = &led_strip;
     };
     mock_kscan: kscan_0 {
         compatible = "zmk,kscan-mock";
