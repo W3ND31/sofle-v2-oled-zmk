@@ -1,8 +1,8 @@
-layout: {zmk_keyboard: sofle}
+layout: {zmk_keyboard: sofle_dongle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, MUTE, PRINTSCREEN, N, M, ',', ., /, RSHFT, LCTRL, LGUI, LALT, lower, SPACE, RETURN, raise, RALT, RGUI, RCTRL]
-  lower:
+  ALPHA: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
+    X, C, V, B, MUTE, PRINTSCREEN, N, M, ',', ., /, RSHFT, LCTRL, LGUI, LALT, LOWER, SPACE, RETURN, UPPER, RALT, RGUI, RCTRL]
+  LOWER:
   - ESCAPE
   - F1
   - F2
@@ -30,21 +30,21 @@ layers:
   - '&caps_word'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '2'}
+  - RGB SPI
+  - RGB SPD
   - {t: ▽, type: trans}
   - HOME
   - {t: ▽, type: trans}
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB TOG
   - RGB EFF
-  - '&M_UNDO'
-  - '&M_CUT'
-  - '&M_COPY'
-  - '&M_PASTE'
-  - '&bootloader'
+  - RGB EFR
+  - RGB BRI
+  - RGB BRD
   - PLAY PAUSE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  UPPER:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  EXTRA:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
