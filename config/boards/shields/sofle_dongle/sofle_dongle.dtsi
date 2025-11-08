@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/led/led.h>
 #include "sofle_layout.dtsi"
 
 &sofle_layout {
@@ -69,6 +70,49 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
+    };
+};
+
+// ALTERAÇÃO: Configuração RGB underglow (baseado no zmk-for-keyboards)
+// Pino GPIO 0.6 (SPI3 MOSI) para dados dos LEDs WS2812
+&pinctrl {
+    spi3_default: spi3_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
+        };
+    };
+
+    spi3_sleep: spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
+            low-power-enable;
+        };
+    };
+};
+
+&spi3 {
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+
+    pinctrl-0 = <&spi3_default>;
+    pinctrl-1 = <&spi3_sleep>;
+    pinctrl-names = "default", "sleep";
+
+    // ALTERAÇÃO: Configuração dos LEDs WS2812 (baseado no zmk-for-keyboards)
+    // chain-length = 36 LEDs (per-key RGB, mas os primeiros 6 são underglow)
+    led_strip: ws2812@0 {
+        compatible = "worldsemi,ws2812-spi";
+        label = "WS2812";
+
+        /* SPI */
+        reg = <0>; /* ignored, but necessary for SPI bindings */
+        spi-max-frequency = <4000000>;
+
+        /* WS2812 */
+        chain-length = <36>; /* There are per-key RGB, but the first 6 are underglow */
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+        color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
     };
 };
 

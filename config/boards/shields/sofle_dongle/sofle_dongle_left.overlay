@@ -20,3 +20,10 @@
 &left_encoder {
     status = "okay";
 };
+
+// ALTERAÇÃO: Habilita RGB underglow no lado esquerdo (baseado no zmk-for-keyboards)
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
+};
