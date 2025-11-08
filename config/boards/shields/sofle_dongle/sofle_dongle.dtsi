@@ -16,6 +16,7 @@
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
+        zmk,physical-layout = &sofle_layout;
     };
 
     default_transform: keymap_transform_0 {

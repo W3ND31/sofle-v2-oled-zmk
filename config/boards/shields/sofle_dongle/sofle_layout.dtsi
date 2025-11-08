@@ -1,14 +1,14 @@
+#include <physical_layouts.dtsi>
+
 / {
-
-    key_physical_attrs: key_physical_attrs {
-        compatible = "zmk,key-physical-attrs";
-
-        #key-cells = <7>;
-    };
-
+    // ALTERAÇÃO: Layout físico ajustado para compatibilidade com keymap-editor
+    // Inclui kscan e transform no layout (formato esperado pelo keymap-editor)
     sofle_layout: sofle_layout {
         compatible = "zmk,physical-layout";
         display-name = "Sofle";
+        
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   37       0     0     0>
