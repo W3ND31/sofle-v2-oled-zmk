@@ -19,6 +19,9 @@
 
 &left_encoder {
     status = "okay";
+    // ALTERAÇÃO: Invertido pinos A e B para corrigir sentido do encoder
+    a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 };
 
 // ALTERAÇÃO: Habilita RGB underglow e layout físico no lado esquerdo (baseado no zmk-for-keyboards)
