@@ -21,9 +21,10 @@
     status = "okay";
 };
 
-// ALTERAÇÃO: Habilita RGB underglow no lado esquerdo (baseado no zmk-for-keyboards)
+// ALTERAÇÃO: Habilita RGB underglow e layout físico no lado esquerdo (baseado no zmk-for-keyboards)
 / {
     chosen {
         zmk,underglow = &led_strip;
+        zmk,physical-layout = &sofle_layout;
     };
 };

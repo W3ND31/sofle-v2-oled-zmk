@@ -16,7 +16,10 @@
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &sofle_layout;
+        // ALTERAÇÃO: zmk,physical-layout removido do dtsi base
+        // O layout físico só deve ser usado nos overlays left/right (onde kscan0 existe)
+        // O dongle central não tem kscan0, então não pode usar o layout físico
+        // zmk,physical-layout = &sofle_layout;
     };
 
     default_transform: keymap_transform_0 {
