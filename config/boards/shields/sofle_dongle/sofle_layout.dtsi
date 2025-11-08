@@ -7,7 +7,9 @@
         compatible = "zmk,physical-layout";
         display-name = "Sofle";
         
-        kscan = <&kscan0>;
+        // ALTERAÇÃO: kscan removido - usa fallback do zmk,kscan chosen
+        // Isso permite que o layout funcione tanto com kscan0 (left/right) quanto com mock_kscan (central)
+        // kscan = <&kscan0>;
         transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
