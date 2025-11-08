@@ -47,10 +47,11 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     status = "disabled";
 };
 
-// ALTERAÇÃO: Desabilita o OLED SSD1306 do dtsi (configuração incorreta)
+// ALTERAÇÃO: Remove o OLED SSD1306 do dtsi (configuração incorreta)
 // O dongle usa SH1106 (129x64) via &i2c0, não SSD1306 (128x32) via &pro_micro_i2c
+// Precisamos deletar o nó antes de redefinir com o label 'oled' para evitar conflito
 &pro_micro_i2c {
-    status = "disabled";
+    /delete-node/ ssd1306@3c;
 };
 
 // ALTERAÇÃO: Habilitada configuração correta do display SH1106 (baseado no zmk-sofle-dongle original)
