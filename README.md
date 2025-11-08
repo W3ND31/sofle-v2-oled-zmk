@@ -18,7 +18,7 @@ The central dongle is similar to the one available on [AliExpress](https://pt.al
 ## 🎹 Default Keymap
 
 The default keymap of this keyboard can be visualized here:
-![Default Keymap](./keymap-drawer/sofle.svg)
+![Default Keymap](./keymap-drawer/sofle_dongle.svg)
 
 ## 🔧 Required Hardware
 
