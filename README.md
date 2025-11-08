@@ -67,7 +67,7 @@ ZMK does provide an online [keymap editor](https://nickcoutsos.github.io/keymap-
 
 #### Modifying the keymap manually
 The exact spacing doesn't matter, but keeping the indentation consistent can be helpful for reading your keymap files. If you indent each button it will be easier
-to confirm the structure of the keymap. Take a look at the [default keymap](config/sofle.keymap) to see how this was done. 
+to confirm the structure of the keymap. Take a look at the [default keymap](config/sofle_dongle.keymap) to see how this was done. 
 
 The Ergomech Sofle V2 has a 5 way switch on the right side keyboard. The location of the key presses on the 5 way switch are on the last line of the `bindings` section of each layer.
 As long as the correct number of entries exist on that row, the 5 way switch will work. 
