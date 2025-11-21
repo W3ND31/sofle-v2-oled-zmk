@@ -9,11 +9,13 @@ This configuration is based on the **Sofle V2 RGB** keyboard, a 6×4+5 key split
 - **Central Dongle**: Nice!Nano v2 with SH1106 display (129x64) for BLE coordination
 - **Display**: OLED SH1106 on the central dongle
 - **RGB Underglow**: WS2812 LEDs (36 LEDs per side, per-key RGB with underglow support)
-- **Encoders**: EC11 rotary encoders on both sides
+- **Encoders**: EC11 rotary encoders on both sides (left and right only, not on dongle)
+- **ZMK Studio**: Enabled for advanced configuration
+- **Mouse Support**: ZMK mouse feature enabled
 
 The RGB configuration is based on [zmk-for-keyboards](https://github.com/zmk-for-keyboards/zmk-for-keyboards) and uses GPIO 0.6 (SPI3 MOSI) for LED data communication.
 
-The central dongle is similar to the one available on [AliExpress](https://pt.aliexpress.com/item/1005009001752841.html) and allows the keyboard to function as a BLE central device, connecting to both sides (left/right) via Bluetooth.
+The central dongle is similar to the one available on [AliExpress](https://pt.aliexpress.com/item/1005009001752841.html) and allows the keyboard to function as a BLE central device, connecting to both sides (left/right) via Bluetooth. It supports up to **7 Bluetooth connections** (2 peripherals + 5 host profiles).
 
 ## 🎹 Default Keymap
 
@@ -129,18 +131,47 @@ sofle-v2-oled-zmk/
 
 The keyboard features RGB underglow with per-key RGB support:
 - **36 WS2812 LEDs per side** (6 underglow + 30 per-key)
-- **Auto-off when idle** to save battery
+- **Auto-off when idle** to save battery (both on left/right sides and central dongle)
 - **SPI-based control** via GPIO 0.6
+- **Maximum brightness**: 60% on sides, 90% on central dongle
+- **Default effect**: Swirl (effect #3)
+- **Auto-off on USB disconnect** (dongle only)
 
 ### Controlling RGB
 
 RGB underglow can be controlled via keymap behaviors. Common controls include:
 - Toggle on/off
 - Brightness adjustment
-- Effect selection (rainbow, solid, breathing, etc.)
+- Effect selection (solid, breathe, spectrum, swirl, etc.)
 - Hue/color adjustment
+- Speed adjustment
+
+RGB is enabled on all three devices (left, right, and central dongle) and will automatically turn off when the keyboard enters idle state to conserve battery power.
 
 See the [ZMK RGB Underglow documentation](https://zmk.dev/docs/features/underglow) for more details on configuring RGB behaviors in your keymap.
+
+## ⚙️ Special Features
+
+### ZMK Studio
+This firmware includes **ZMK Studio** enabled, allowing advanced keyboard configuration:
+- Locking mode disabled (`CONFIG_ZMK_STUDIO_LOCKING=n`)
+- Allows dynamic key remapping
+- Accessible through the ZMK Studio application
+
+### Bluetooth and Connectivity
+- **Maximum connections**: 7 devices (2 peripherals + 5 host profiles)
+- **Transmission power**: +8 dBm for extended range
+- **Battery proxy**: Central dongle displays battery level from both sides
+- **Passkey entry**: Disabled by default
+
+### Power Management
+The firmware implements several strategies to save battery:
+- **RGB auto-off**: Automatically turns off when keyboard enters idle state
+- **Smart display**: Efficient OLED display management
+- **Backlight auto-off**: Configured to turn off when inactive
+
+### Mouse Support
+ZMK mouse support enabled, allowing mouse cursor control through the keyboard.
 
 ## 🐛 Troubleshooting
 
@@ -152,11 +183,18 @@ See the [ZMK RGB Underglow documentation](https://zmk.dev/docs/features/underglo
 - Make sure the dongle was flashed first
 - Verify both sides are powered on
 - Try resetting settings with `settings_reset`
+- Ensure the dongle is powered on and visible
 
 ### RGB not working
 - Verify the RGB LEDs are properly soldered
 - Ensure both left and right sides have RGB enabled in their respective `.conf` files
 - RGB will automatically turn off when the keyboard enters idle state (power saving feature)
+- Check if SPI is properly configured in the overlay files
+
+### Encoders not responding
+- Encoders are only present on left and right sides, not on the central dongle
+- Verify the encoder pins in the overlay files
+- Check if `CONFIG_EC11=y` is enabled in the side-specific configuration files
 
 
 
